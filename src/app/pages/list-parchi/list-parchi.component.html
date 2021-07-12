@@ -1,0 +1,12 @@
+<h2 class="d-flex justify-content-center"> LISTA PARCHI</h2>
+
+<div class="card mb-3 " *ngFor="let item of listParchi">
+    <img [src]="item.image" class="card-img-top" height=400 alt="sfondo parco">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.place}}</p>
+      <p class="card-text">{{item.theme}}</p>
+      <p class="card-text">{{item.type}}</p>
+    </div>
+    <a routerLink="{{item.id}}" class="btn btn-primary">Details</a>
+  </div>
